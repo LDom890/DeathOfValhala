@@ -17,12 +17,16 @@ public class Shot : MonoBehaviour
 
     public void Update()
     {
-        Fire();
+        if (Input.GetKey("e"))
+        {
+            Fire();
+        }
+       
     }
    public void Fire()
     {
-        if (Input.GetKey("Space"))
-        {
+        
+        
             if (Time.time > shotRateTime)
             {
                 GameObject newBullet;
@@ -33,7 +37,7 @@ public class Shot : MonoBehaviour
                 Destroy(newBullet, 2);
                 rb.AddForce(transform.TransformPoint(Vector3.forward) * recoilForce);
             }
-        }
+        
        
     }
 }
