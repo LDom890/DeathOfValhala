@@ -9,9 +9,13 @@ public class PlayerControler : MonoBehaviour
 
     void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-        Vector3 move = transform.right * x + transform.forward * z;
-        controller.Move(move * speed * Time.deltaTime);
+        float x = Input.GetAxisRaw("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
+        Vector3 move = new Vector3(x, 0f, z).normalized;
+        //Vector3 move = transform.right * x + transform.forward * z;
+        if(move.magnitude >= 0.1f)
+        {
+            controller.Move(move * speed * Time.deltaTime);
+        }
     }
 }
