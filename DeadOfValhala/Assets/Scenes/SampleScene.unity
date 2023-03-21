@@ -7012,8 +7012,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.213074, y: 12.293399, z: 36.79856}
-  m_Center: {x: 0.22696304, y: 7.71423, z: 1.2395821}
+  m_Size: {x: 15.386282, y: 12.293399, z: 36.79856}
+  m_Center: {x: -0.016670227, y: 7.7142296, z: 1.2395818}
 --- !u!4 &1199751610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 556015607594221389, guid: 854d8ade6d758cd4e9bca0b3fae20628, type: 3}
@@ -7034,7 +7034,19 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1199751612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199751607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff36e4d01a0507948b28511d237d5534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1206456080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8044,12 +8056,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1
-  m_Radius: 0.05
+  m_Radius: 0.03
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 33.32, z: 0}
 --- !u!114 &1437773343
 MonoBehaviour:
   m_ObjectHideFlags: 0
