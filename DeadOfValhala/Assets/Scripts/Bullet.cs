@@ -6,7 +6,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float radius = 5.0F;
-    public float power = 5.0F;
+    public float power = 8.0F;
     public Rigidbody rb;
 
     
